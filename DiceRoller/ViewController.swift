@@ -41,5 +41,9 @@ class ViewController: UIViewController {
         dicImageOne.image = UIImage(named: diceArray[randomDiceIndex1])
         dicImageTwo.image = UIImage(named: diceArray[randomDiceIndex2])
     }
+    
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        generateRandomData()
+    }
 }
 
